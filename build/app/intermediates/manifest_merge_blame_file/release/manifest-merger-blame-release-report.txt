@@ -1,0 +1,129 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.example.serumswap"
+4    android:versionCode="4001"
+5    android:versionName="1.0.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="16"
+8-->/home/kishore/serum/android/app/src/main/AndroidManifest.xml
+9        android:targetSdkVersion="31" />
+9-->/home/kishore/serum/android/app/src/main/AndroidManifest.xml
+10
+11    <application
+12        android:name="android.app.Application"
+12-->/home/kishore/serum/android/app/src/main/AndroidManifest.xml:5:9-42
+13        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+13-->[androidx.core:core:1.6.0] /home/kishore/.gradle/caches/transforms-3/acbce933e4b464a5224ed377a62db1f5/transformed/core-1.6.0/AndroidManifest.xml:24:18-86
+14        android:icon="@mipmap/ic_launcher"
+14-->/home/kishore/serum/android/app/src/main/AndroidManifest.xml:6:9-43
+15        android:label="serumswap" >
+15-->/home/kishore/serum/android/app/src/main/AndroidManifest.xml:4:9-34
+16        <activity
+16-->/home/kishore/serum/android/app/src/main/AndroidManifest.xml:7:9-36:20
+17            android:name="com.example.serumswap.MainActivity"
+17-->/home/kishore/serum/android/app/src/main/AndroidManifest.xml:8:13-41
+18            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
+18-->/home/kishore/serum/android/app/src/main/AndroidManifest.xml:12:13-163
+19            android:exported="true"
+19-->/home/kishore/serum/android/app/src/main/AndroidManifest.xml:9:13-36
+20            android:hardwareAccelerated="true"
+20-->/home/kishore/serum/android/app/src/main/AndroidManifest.xml:13:13-47
+21            android:launchMode="singleTop"
+21-->/home/kishore/serum/android/app/src/main/AndroidManifest.xml:10:13-43
+22            android:theme="@style/LaunchTheme"
+22-->/home/kishore/serum/android/app/src/main/AndroidManifest.xml:11:13-47
+23            android:windowSoftInputMode="adjustResize" >
+23-->/home/kishore/serum/android/app/src/main/AndroidManifest.xml:14:13-55
+24
+25            <!--
+26                 Specifies an Android theme to apply to this Activity as soon as
+27                 the Android process has started. This theme is visible to the user
+28                 while the Flutter UI initializes. After that, this theme continues
+29                 to determine the Window background behind the Flutter UI.
+30            -->
+31            <meta-data
+31-->/home/kishore/serum/android/app/src/main/AndroidManifest.xml:19:13-22:17
+32                android:name="io.flutter.embedding.android.NormalTheme"
+32-->/home/kishore/serum/android/app/src/main/AndroidManifest.xml:20:15-70
+33                android:resource="@style/NormalTheme" />
+33-->/home/kishore/serum/android/app/src/main/AndroidManifest.xml:21:15-52
+34
+35            <intent-filter>
+35-->/home/kishore/serum/android/app/src/main/AndroidManifest.xml:23:13-26:29
+36                <action android:name="android.intent.action.MAIN" />
+36-->/home/kishore/serum/android/app/src/main/AndroidManifest.xml:24:17-68
+36-->/home/kishore/serum/android/app/src/main/AndroidManifest.xml:24:25-66
+37
+38                <category android:name="android.intent.category.LAUNCHER" />
+38-->/home/kishore/serum/android/app/src/main/AndroidManifest.xml:25:17-76
+38-->/home/kishore/serum/android/app/src/main/AndroidManifest.xml:25:27-74
+39            </intent-filter>
+40            <!-- Deep linking -->
+41            <meta-data
+41-->/home/kishore/serum/android/app/src/main/AndroidManifest.xml:28:13-90
+42                android:name="flutter_deeplinking_enabled"
+42-->/home/kishore/serum/android/app/src/main/AndroidManifest.xml:28:24-66
+43                android:value="true" />
+43-->/home/kishore/serum/android/app/src/main/AndroidManifest.xml:28:67-87
+44
+45            <intent-filter android:autoVerify="true" >
+45-->/home/kishore/serum/android/app/src/main/AndroidManifest.xml:29:13-35:29
+45-->/home/kishore/serum/android/app/src/main/AndroidManifest.xml:29:28-53
+46                <action android:name="android.intent.action.VIEW" />
+46-->/home/kishore/serum/android/app/src/main/AndroidManifest.xml:30:17-69
+46-->/home/kishore/serum/android/app/src/main/AndroidManifest.xml:30:25-66
+47
+48                <category android:name="android.intent.category.DEFAULT" />
+48-->/home/kishore/serum/android/app/src/main/AndroidManifest.xml:31:17-76
+48-->/home/kishore/serum/android/app/src/main/AndroidManifest.xml:31:27-73
+49                <category android:name="android.intent.category.BROWSABLE" />
+49-->/home/kishore/serum/android/app/src/main/AndroidManifest.xml:32:17-78
+49-->/home/kishore/serum/android/app/src/main/AndroidManifest.xml:32:27-75
+50
+51                <data
+51-->/home/kishore/serum/android/app/src/main/AndroidManifest.xml:33:17-84
+52                    android:host="flutterbooksample.com"
+52-->/home/kishore/serum/android/app/src/main/AndroidManifest.xml:33:45-81
+53                    android:scheme="dapp" />
+53-->/home/kishore/serum/android/app/src/main/AndroidManifest.xml:33:23-44
+54                <data android:scheme="dapp" />
+54-->/home/kishore/serum/android/app/src/main/AndroidManifest.xml:33:17-84
+54-->/home/kishore/serum/android/app/src/main/AndroidManifest.xml:33:23-44
+55            </intent-filter>
+56        </activity>
+57        <!--
+58             Don't delete the meta-data below.
+59             This is used by the Flutter tool to generate GeneratedPluginRegistrant.java
+60        -->
+61        <meta-data
+61-->/home/kishore/serum/android/app/src/main/AndroidManifest.xml:39:9-41:33
+62            android:name="flutterEmbedding"
+62-->/home/kishore/serum/android/app/src/main/AndroidManifest.xml:40:13-44
+63            android:value="2" />
+63-->/home/kishore/serum/android/app/src/main/AndroidManifest.xml:41:13-30
+64
+65        <activity
+65-->[:url_launcher_android] /home/kishore/serum/build/url_launcher_android/intermediates/merged_manifest/release/AndroidManifest.xml:10:9-13:74
+66            android:name="io.flutter.plugins.urllauncher.WebViewActivity"
+66-->[:url_launcher_android] /home/kishore/serum/build/url_launcher_android/intermediates/merged_manifest/release/AndroidManifest.xml:11:13-74
+67            android:exported="false"
+67-->[:url_launcher_android] /home/kishore/serum/build/url_launcher_android/intermediates/merged_manifest/release/AndroidManifest.xml:12:13-37
+68            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
+68-->[:url_launcher_android] /home/kishore/serum/build/url_launcher_android/intermediates/merged_manifest/release/AndroidManifest.xml:13:13-71
+69
+70        <uses-library
+70-->[androidx.window:window:1.0.0-beta04] /home/kishore/.gradle/caches/transforms-3/49bc944d29f70d45aa5add8e43e3247e/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:25:9-27:40
+71            android:name="androidx.window.extensions"
+71-->[androidx.window:window:1.0.0-beta04] /home/kishore/.gradle/caches/transforms-3/49bc944d29f70d45aa5add8e43e3247e/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:26:13-54
+72            android:required="false" />
+72-->[androidx.window:window:1.0.0-beta04] /home/kishore/.gradle/caches/transforms-3/49bc944d29f70d45aa5add8e43e3247e/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:27:13-37
+73        <uses-library
+73-->[androidx.window:window:1.0.0-beta04] /home/kishore/.gradle/caches/transforms-3/49bc944d29f70d45aa5add8e43e3247e/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:28:9-30:40
+74            android:name="androidx.window.sidecar"
+74-->[androidx.window:window:1.0.0-beta04] /home/kishore/.gradle/caches/transforms-3/49bc944d29f70d45aa5add8e43e3247e/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:29:13-51
+75            android:required="false" />
+75-->[androidx.window:window:1.0.0-beta04] /home/kishore/.gradle/caches/transforms-3/49bc944d29f70d45aa5add8e43e3247e/transformed/jetified-window-1.0.0-beta04/AndroidManifest.xml:30:13-37
+76    </application>
+77
+78</manifest>
