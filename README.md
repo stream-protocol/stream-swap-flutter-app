@@ -1,6 +1,6 @@
-# serumswap
+# Stream Swap Template
 
-A new Flutter project.
+A Stream Swap Flutter project.
 
 ## Getting Started
 
